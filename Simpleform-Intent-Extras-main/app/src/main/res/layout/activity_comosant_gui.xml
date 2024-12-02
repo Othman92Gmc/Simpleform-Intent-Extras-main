@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RadioGroup
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupRadio"
+            android:layout_gravity="center_horizontal"
+    >
+        <RadioButton
+                android:text="Mme."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton6"
+                tools:text="Mme."/>
+        <RadioButton
+                android:text="Mr."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton5"
+                tools:text="Mr."/>
+    </RadioGroup>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+    >
+        <TextView
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:text="Nom"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:labelFor="@+id/TextNom"
+
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+                android:inputType="textPersonName"
+                android:id="@+id/TextNom"
+                android:hint="Nom"
+                android:layout_marginLeft="50dp"
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+    >
+        <TextView
+                android:layout_width="82dp"
+                android:layout_height="35dp"
+                android:text="Prénom"
+                android:textSize="18dp"
+                android:labelFor="@+id/TextPrenom"
+                android:layout_marginLeft="20dp"
+
+        />
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:inputType="textPersonName"
+                android:id="@+id/TextPrenom"
+                android:hint="Prénom"
+                android:layout_marginLeft="50dp"
+        />
+
+    </LinearLayout>
+
+
+
+    <CheckBox
+            android:text="Hackathon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkHack"/>
+    <CheckBox
+            android:text="Session de certification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkSession"
+            android:layout_marginBottom="50dp"
+    />
+    <Button
+            android:text="Enregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/submit"/>
+
+</LinearLayout>
